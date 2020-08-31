@@ -1,0 +1,527 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Nanum+Gothic:wght@700&family=Nanum+Pen+Script&family=Roboto&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css" />
+    <link rel="stylesheet" href="./style/normalize.css" />
+    <link rel="stylesheet" href="./style/style.css" />
+    <title>Kinezis-club</title>
+  </head>
+  <body>
+    <header class="header">
+      <div class="logo">
+        <img src="./assets/image/logo.png" alt="logo" />
+      </div>
+      <nav>
+        <ul class="navigation-list">
+          <li class="navigation-item active-item"><a href="#join">Запись в группу</a></li>
+          <li class="navigation-item"><a href="#news">Новости</a></li>
+          <li class="navigation-item popover__wrapper">
+            <a href="#courses">Направления</a>
+            <div class="popover__content">
+              <ul>
+                <li class="popover__item"><a href="#balroom-dance">Бальные танцы</a></li>
+                <li class="popover__item"><a href="#choreography">Современная хореография</a></li>
+                <li class="popover__item"><a href="#solo-latin">Соло-латина</a></li>
+                <li class="popover__item"><a href="#wedding-dance">Свадебный танец</a></li>
+                <li class="popover__item"><a href="#social-dance">Социальные направления</a></li>
+              </ul>
+            </div>
+          </li>
+          <li class="navigation-item"><a href="#schedule">Расписание</a></li>
+          <li class="navigation-item"><a href="#payment">Оплата</a></li>
+          <li class="navigation-item"><a href="#contacts">Контакты</a></li>
+        </ul>
+      </nav>
+    </header>
+
+    <section class="preview" id="join">
+      <div class="preview-content">
+        <h1 class="preview-title">
+          Танцевально-спортивный <br />
+          клуб "Кинезис"
+        </h1>
+        <p class="preview-subtitle">Детско юношеское общественное обьединение</p>
+
+        <button class="preview-btn">Запись в группу</button>
+
+        <div class="preview-arrow-down"></div>
+      </div>
+    </section>
+
+    <section class="news" id="news">
+      <div class="wrapper">
+        <h2 class="news-title">Новости</h2>
+        <div class="swiper-container">
+          <!-- Additional required wrapper -->
+          <div class="swiper-wrapper">
+            <!-- Slides -->
+            <div class="swiper-slide">
+              <img src="./assets/image/jorgenhaland101813.jpg" alt="" />
+            </div>
+            <div class="swiper-slide">
+              <img src="./assets/image/chrisbarbalis223997.jpg" alt="" />
+            </div>
+            <div class="swiper-slide">
+              <img src="./assets/image/cherrylaithang138648.jpg" alt="" />
+            </div>
+          </div>
+
+          <!-- If we need navigation buttons -->
+          <div class="swiper-button-prev"></div>
+          <div class="swiper-button-next"></div>
+        </div>
+
+        <!-- If we need pagination -->
+        <div class="swiper-pagination"></div>
+      </div>
+    </section>
+
+    <section class="courses" id="courses">
+      <div class="flex-wrap_center wrapper">
+        <div class="course-img ballroom-image"></div>
+        <div class="course-info" id="balroom-dance">
+          <h3 class="course-title">Бальные танцы</h3>
+          <p class="course-subtitle">
+            Это музыка, красота и движение. Это мужественность и женственность, чувственность,
+            страсть и эмоции. <strong>Танцы</strong> - это удовольствие и вдохновение, творчество и
+            радость.
+          </p>
+
+          <div class="course-more">
+            <span>Узнать больше</span>
+            <span class="more-ico"></span>
+          </div>
+        </div>
+        <div class="course-info" id="choreography">
+          <h3 class="course-title">Современная хореография</h3>
+          <p class="course-subtitle">
+            El baile flamenco is known for its emotional intensity, proud carriage, expressive use
+            of the arms and rhythmic stamping of the feet.
+          </p>
+
+          <div class="course-more">
+            <span>Узнать больше</span>
+            <span class="more-ico"></span>
+          </div>
+        </div>
+        <div class="course-img choreography-image"></div>
+        <div class="course-img solo-latin-image"></div>
+        <div class="course-info" id="solo-latin">
+          <h3 class="course-title">Соло-латина</h3>
+          <p class="course-subtitle">
+            A ballroom dance originating in Buenos Aires, characterized by marked rhythms and
+            postures and abrupt pauses.
+          </p>
+
+          <div class="course-more">
+            <span>Узнать больше</span>
+            <span class="more-ico"></span>
+          </div>
+        </div>
+        <div class="course-info" id="wedding-dance">
+          <h3 class="course-title">Свадебный танец</h3>
+          <p class="course-subtitle">
+            El baile flamenco is known for its emotional intensity, proud carriage, expressive use
+            of the arms and rhythmic stamping of the feet.
+          </p>
+
+          <div class="course-more">
+            <span>Узнать больше</span>
+            <span class="more-ico"></span>
+          </div>
+        </div>
+        <div class="course-img wedding-image"></div>
+        <div class="course-img social-image"></div>
+        <div class="course-info" id="social-dance">
+          <h3 class="course-title">Социальные направления</h3>
+          <p class="course-subtitle">
+            A ballroom dance originating in Buenos Aires, characterized by marked rhythms and
+            postures and abrupt pauses.
+          </p>
+
+          <div class="course-more">
+            <span>Узнать больше</span>
+            <span class="more-ico"></span>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="coaches">
+      <div class="wrapper">
+        <div class="coaches-info">
+          <h2 class="coaches-title">Тренеры</h2>
+          <p class="coaches-subtitle">
+            Наши тренеры готовы дарить свой опыт тем, кто хочет становиться лучше, сильнее и
+            успешнее. Они помогают, поддерживают, мотивируют, поднимают настроение и заряжают
+            энергией.
+          </p>
+        </div>
+
+        <div class="flex-wrap coaches-wrapper">
+          <div class="coach-info">
+            <img
+              class="coach-image"
+              src="https://static.tildacdn.com/tild6432-3434-4565-a539-626161613339/IMAGE_2020-08-25_175.jpg"
+              alt="coach-image"
+            />
+            <h3 class="coach-name">Симонов Виталий Николаевич</h3>
+            <p>Главный тренер</p>
+          </div>
+          <div class="coach-info">
+            <img
+              class="coach-image"
+              src="https://static.tildacdn.com/tild3462-3431-4336-a639-643861336531/IMAGE_2020-08-25_175.jpg"
+              alt="coach-image"
+            />
+            <h3 class="coach-name">Мусько Павел Сергеевич</h3>
+            <p>Главный тренер, председатель правления</p>
+          </div>
+          <div class="coach-info">
+            <img
+              class="coach-image"
+              src="https://static.tildacdn.com/tild3839-3332-4638-b230-616333623566/IMAGE_2020-08-25_175.jpg"
+              alt="coach-image"
+            />
+            <h3 class="coach-name">Зимницкий Игорь Элшадович</h3>
+            <p>Тренер бального танца и соло-латины</p>
+          </div>
+          <div class="coach-info">
+            <img
+              class="coach-image"
+              src="https://static.tildacdn.com/tild6334-3830-4366-b364-643137613438/IMAGE_2020-08-25_175.jpg"
+              alt="coach-image"
+            />
+            <h3 class="coach-name">Муратов Тимур Александрович</h3>
+            <p>Тренер по актерскому мастерству</p>
+          </div>
+          <div class="coach-info">
+            <img
+              class="coach-image"
+              src="https://static.tildacdn.com/tild6266-6235-4535-a663-303737343362/IMAGE_2020-08-25_175.jpg"
+              alt="coach-image"
+            />
+            <h3 class="coach-name">Леонович Анна Владимировна</h3>
+            <p>Тренер бального танца</p>
+          </div>
+          <div class="coach-info">
+            <img
+              class="coach-image"
+              src="https://static.tildacdn.com/tild6432-3864-4234-a561-396535343135/IMAGE_2020-08-25_175.jpg"
+              alt="coach-image"
+            />
+            <h3 class="coach-name">Ивашкевич Мария Вячеславовна</h3>
+            <p>Тренер бального танца и соло-латины</p>
+          </div>
+          <div class="coach-info">
+            <img
+              class="coach-image"
+              src="https://static.tildacdn.com/tild3465-3161-4237-b437-643563363836/IMAGE_2020-08-25_175.jpg"
+              alt="coach-image"
+            />
+            <h3 class="coach-name">Мицкевич Кристина Викторовна</h3>
+            <p>Хореограф</p>
+          </div>
+          <div class="coach-info">
+            <img
+              class="coach-image"
+              src="https://static.tildacdn.com/tild3838-3164-4538-b932-633732613138/DSCF1308.jpg"
+              alt="coach-image"
+            />
+            <h3 class="coach-name">Буйновский Евгений Юрьевич</h3>
+            <p>Тренер бального танца</p>
+          </div>
+          <div class="coach-info">
+            <img
+              class="coach-image"
+              src="https://static.tildacdn.com/tild6461-6539-4533-b466-613065333037/viber_image_2020-07-.jpg"
+              alt="coach-image"
+            />
+            <h3 class="coach-name">Бидюк Виталина Витальевна</h3>
+            <p>Педагог по мастерству актера</p>
+          </div>
+        </div>
+        <hr class="line" />
+      </div>
+    </section>
+
+    <section class="schedule" id="schedule">
+      <div class="wrapper flex-column">
+        <h2 class="schedule-title">Расписание</h2>
+
+        <div class="schedule-info">
+          <table>
+            <tr>
+              <td class="school-number">СШ №51</td>
+              <td>Дети 4 - 5 лет.</td>
+              <td>Вт, Чт. 18:00</td>
+              <td class="price">65р.</td>
+            </tr>
+            <tr>
+              <td class="school-address">ул. Дроздовича 3</td>
+              <td>Дети 6 - 7 лет</td>
+              <td>Вт, Чт. 19:00</td>
+              <td class="price">65р.</td>
+            </tr>
+            <tr>
+              <td></td>
+              <td colspan="3">Тренер Зимницкий Игорь Элшадович</td>
+            </tr>
+          </table>
+        </div>
+
+        <div class="schedule-info">
+          <table>
+            <tr>
+              <td class="school-number">СШ №55</td>
+              <td>Дети 6 - 7 лет</td>
+              <td>Пн, Ср. 18:00</td>
+              <td class="price">65р.</td>
+            </tr>
+            <tr>
+              <td class="school-address">ул.Надеждинская 21</td>
+              <td>Дети 8 и старше</td>
+              <td>Пн, Ср. 19:00</td>
+              <td class="price">65р.</td>
+            </tr>
+            <tr>
+              <td></td>
+              <td colspan="3">Тренер Симонов Виталий Николаевич</td>
+            </tr>
+          </table>
+        </div>
+
+        <div class="schedule-info">
+          <table>
+            <tr>
+              <td class="school-number">СШ №29</td>
+              <td>Дети 4 - 5 лет.</td>
+              <td>Вт, Чт. 18:00</td>
+              <td class="price">65р.</td>
+            </tr>
+            <tr>
+              <td class="school-address">ул.Солнечная 3</td>
+              <td>Дети 8 - 9 лет</td>
+              <td>Вт, Чт. 19:00</td>
+              <td class="price">65р.</td>
+            </tr>
+            <tr>
+              <td></td>
+              <td>Соло-Латина</td>
+              <td>Вт, Чт. 19:00</td>
+              <td class="price">65р.</td>
+            </tr>
+            <tr>
+              <td></td>
+              <td colspan="3">Тренер Ивашкевич Мария Вячеславовна</td>
+            </tr>
+          </table>
+        </div>
+      </div>
+    </section>
+
+    <section class="payment" id="payment">
+      <div class="wrapper flex-wrap">
+        <div>
+          <h2 class="payment-title">
+            Оплату можно <br />
+            произвести:
+          </h2>
+        </div>
+        <div class="payment-info">
+          <p>
+            Через Банк и почтовое отделение по нашим реквизитам. <b>Наши реквизиты:</b> <br />
+            ДЮОО "ТСК"Кинезис" УНН 194901237, р/с: BY36 AKBB 3015 5240 0468 7000 0000 в <br />
+            ЦБУ 524 ОАО «АСБ Беларусбанк», БИК AKBBBY2X <br />
+            Назначение платежа: <b>целевой взнос на уставные цели.</b>
+          </p>
+        </div>
+      </div>
+    </section>
+
+    <section class="gallery">
+      <div class="wrapper">
+        <h2 class="gallery-title">Фотогаллерея клуба</h2>
+        <div class="gallery-images"></div>
+      </div>
+    </section>
+
+    <section class="questions">
+      <div class="wrapper">
+        <h2 class="question-title">Вопросы</h2>
+        <div class="questions-list flex-wrap">
+          <div class="question-item">
+            <div class="question">
+              What are all the different kinds of dance classes you offer? Can anyone take them?
+            </div>
+            <div class="answer">
+              You will start as a beginner, or more experienced student, learning and perfecting
+              moves to the most popular tunes. You can find a description of each class on the
+              Classes Page.
+            </div>
+          </div>
+          <div class="question-item">
+            <div class="question">How do I choose a class that is right for me?</div>
+            <div class="answer">
+              If you are a beginner, please look for classes that are "Good for beginners" or for
+              "All levels welcome." Find the descriptions on the Timetable page.
+            </div>
+          </div>
+          <div class="question-item">
+            <div class="question">How long are the classes?</div>
+            <div class="answer">
+              The classes are 90 minutes each, with a 10 minute break in the middle.
+            </div>
+          </div>
+          <div class="question-item">
+            <div class="question">Do you have Zumba Classes?</div>
+            <div class="answer">Not yet, but we have plans to extend the program.</div>
+          </div>
+          <div class="question-item">
+            <div class="question">What should I wear?</div>
+            <div class="answer">
+              Wear anything that you feel good moving around in. Also, sneakers or "dance sneakers"
+              are the best types of shoes to wear.
+            </div>
+          </div>
+          <div class="question-item">
+            <div class="question">Do you offer workshops with acclaimed dancers?</div>
+            <div class="answer">
+              Yes! Several times a year. They will be posted on our website and you can join our
+              mailing list to be notified.
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="contacts" id="contacts">
+      <div class="wrapper">
+        <div class="contacts-title">Контакты</div>
+        <div class="contact">
+          По всем интересующим вопросам звоните: <br />
+          <b>+375 (29) 649-93-94 Виталий</b>
+        </div>
+        <div class="school-addresses">
+          <h3 class="school-address-title"><b>Адреса наших школ:</b></h3>
+          <ul class="school-list">
+            <li class="school-item">Солнечная улица, д 4, СШ 54</li>
+            <li class="school-item">Солнечная улица, д 3, НШ 29</li>
+            <li class="school-item">Надеждинская улица, д 21, СШ 55</li>
+          </ul>
+        </div>
+        <div class="social-icons"></div>
+      </div>
+    </section>
+
+    <section class="map">
+      <div id="map" style="width: 100%; height: 400px"></div>
+    </section>
+
+    <div class="modal__wrapper">
+      <div class="modal">
+        <h2 class="modal-title">Бальные танцы это :</h2>
+        <hr class="modal-line" />
+        <p class="modal-subtitle">Средство воспитания и развития маленького человека</p>
+        <p class="modal-description">
+          Обогащает духовный мир, помогает ребёнку раскрыться как личность. В танце ребенок
+          самоутверждается. На паркете танцевальной студии актуализируется его внутреннее «Я».
+        </p>
+        <p class="modal-subtitle">Физическое, эмоциональное и интеллектуальное развитие</p>
+        <p class="modal-description">
+          Занятия бальными танцами способствуют развитию физической силы ребенка, выносливости,
+          гибкости, укрепляют мышцы, улучшают работу дыхательной и сердечно-сосудистой систем.
+          Многие исследования психологов доказали, что дети, занимающиеся танцами, добиваются
+          больших успехов в учёбе, чем их сверстники, а также опережают их в общем развитии.
+        </p>
+        <p class="modal-subtitle">Память, координация, логическое и образное мышление</p>
+        <p class="modal-description">
+          Занятия танцами развивают у детей эстетические чувства, музыкальный слух, умение
+          воспринимать музыку, учат владеть своим телом, тренируют моторику и координацию движений.
+        </p>
+        <p class="modal-subtitle">
+          Снятие напряжения учебной школьной нагрузки, хорошее настроение
+        </p>
+        <p class="modal-description">
+          Занятия танцами помогают вашему ребенку расслабиться, почувствовать уверенность в себе.
+        </p>
+
+        <div class="modal-close"></div>
+      </div>
+    </div>
+
+    <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+
+    <script>
+      var mySwiper = new Swiper('.swiper-container', {
+        loop: true,
+        centeredSlides: true,
+        spaceBetween: 1000,
+        autoHeight: true,
+
+        pagination: {
+          el: '.swiper-pagination',
+        },
+
+        navigation: {
+          nextEl: '.swiper-button-next',
+          prevEl: '.swiper-button-prev',
+        },
+      });
+    </script>
+
+    <!-- <script
+      src="https://api-maps.yandex.ru/2.1/?apikey=ваш API-ключ&lang=ru_RU"
+      type="text/javascript"
+    ></script>
+    <script type="text/javascript">
+      // Функция ymaps.ready() будет вызвана, когда
+      // загрузятся все компоненты API, а также когда будет готово DOM-дерево.
+      ymaps.ready(init);
+      function init() {
+        // Создание карты.
+        var myMap = new ymaps.Map('map', {
+          // Координаты центра карты.
+          // Порядок по умолчанию: «широта, долгота».
+          // Чтобы не определять координаты центра карты вручную,
+          // воспользуйтесь инструментом Определение координат.
+          center: [53.863978, 27.562542],
+          // Уровень масштабирования. Допустимые значения:
+          // от 0 (весь мир) до 19.
+          zoom: 13,
+        });
+
+        myMap.controls.remove('searchControl');
+        myMap.controls.remove('trafficControl');
+        myMap.controls.remove('typeSelector');
+        myMap.controls.remove('rulerControl');
+
+        var coords = [
+          [53.863978, 27.562542],
+          [53.862568, 27.56256],
+          [53.876127, 27.564958],
+          [53.847824, 27.562524],
+        ];
+        var myCollection = new ymaps.GeoObjectCollection(
+          {},
+          {
+            preset: 'islands#redIcon', //все метки красные
+            draggable: false, // и их можно перемещать
+          },
+        );
+
+        for (var i = 0; i < coords.length; i++) {
+          myCollection.add(new ymaps.Placemark(coords[i]));
+        }
+
+        myMap.geoObjects.add(myCollection);
+      }
+    </script> -->
+  </body>
+</html>
