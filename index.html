@@ -14,30 +14,35 @@
   </head>
   <body>
     <header class="header">
-      <div class="logo">
-        <img src="./assets/image/logo.png" alt="logo" />
+      <div class="header__wrapper">
+        <div class="logo">
+          <img src="./assets/image/logo.png" alt="logo" />
+        </div>
+        <nav class="navigation hidden">
+          <ul class="navigation-list">
+            <li class="navigation-item active-item"><a href="#join">Запись в группу</a></li>
+            <li class="navigation-item"><a href="#news">Новости</a></li>
+            <li class="navigation-item popover__wrapper">
+              <a href="#courses">Направления</a>
+              <div class="popover__content">
+                <ul>
+                  <li class="popover__item"><a href="#balroom-dance">Бальные танцы</a></li>
+                  <li class="popover__item"><a href="#choreography">Современная хореография</a></li>
+                  <li class="popover__item"><a href="#solo-latin">Соло-латина</a></li>
+                  <li class="popover__item"><a href="#wedding-dance">Свадебный танец</a></li>
+                  <li class="popover__item"><a href="#social-dance">Социальные направления</a></li>
+                </ul>
+              </div>
+            </li>
+            <li class="navigation-item"><a href="#schedule">Расписание</a></li>
+            <li class="navigation-item"><a href="#payment">Оплата</a></li>
+            <li class="navigation-item"><a href="#contacts">Контакты</a></li>
+          </ul>
+        </nav>
+        <div class="burger-menu">
+          <div class="burger-menu__line"></div>
+        </div>
       </div>
-      <nav>
-        <ul class="navigation-list">
-          <li class="navigation-item active-item"><a href="#join">Запись в группу</a></li>
-          <li class="navigation-item"><a href="#news">Новости</a></li>
-          <li class="navigation-item popover__wrapper">
-            <a href="#courses">Направления</a>
-            <div class="popover__content">
-              <ul>
-                <li class="popover__item"><a href="#balroom-dance">Бальные танцы</a></li>
-                <li class="popover__item"><a href="#choreography">Современная хореография</a></li>
-                <li class="popover__item"><a href="#solo-latin">Соло-латина</a></li>
-                <li class="popover__item"><a href="#wedding-dance">Свадебный танец</a></li>
-                <li class="popover__item"><a href="#social-dance">Социальные направления</a></li>
-              </ul>
-            </div>
-          </li>
-          <li class="navigation-item"><a href="#schedule">Расписание</a></li>
-          <li class="navigation-item"><a href="#payment">Оплата</a></li>
-          <li class="navigation-item"><a href="#contacts">Контакты</a></li>
-        </ul>
-      </nav>
     </header>
 
     <section class="preview" id="join">
@@ -93,11 +98,47 @@
             радость.
           </p>
 
-          <div class="course-more">
+          <div class="course-more ballroom-more">
             <span>Узнать больше</span>
             <span class="more-ico"></span>
           </div>
+
+          <div class="modal__wrapper ballroom-modal">
+            <div class="modal">
+              <h2 class="modal-title">Бальные танцы это :</h2>
+              <hr class="modal-line" />
+              <p class="modal-subtitle">Средство воспитания и развития маленького человека</p>
+              <p class="modal-description">
+                Обогащает духовный мир, помогает ребёнку раскрыться как личность. В танце ребенок
+                самоутверждается. На паркете танцевальной студии актуализируется его внутреннее «Я».
+              </p>
+              <p class="modal-subtitle">Физическое, эмоциональное и интеллектуальное развитие</p>
+              <p class="modal-description">
+                Занятия бальными танцами способствуют развитию физической силы ребенка,
+                выносливости, гибкости, укрепляют мышцы, улучшают работу дыхательной и
+                сердечно-сосудистой систем. Многие исследования психологов доказали, что дети,
+                занимающиеся танцами, добиваются больших успехов в учёбе, чем их сверстники, а также
+                опережают их в общем развитии.
+              </p>
+              <p class="modal-subtitle">Память, координация, логическое и образное мышление</p>
+              <p class="modal-description">
+                Занятия танцами развивают у детей эстетические чувства, музыкальный слух, умение
+                воспринимать музыку, учат владеть своим телом, тренируют моторику и координацию
+                движений.
+              </p>
+              <p class="modal-subtitle">
+                Снятие напряжения учебной школьной нагрузки, хорошее настроение
+              </p>
+              <p class="modal-description">
+                Занятия танцами помогают вашему ребенку расслабиться, почувствовать уверенность в
+                себе.
+              </p>
+
+              <div class="modal-close"></div>
+            </div>
+          </div>
         </div>
+
         <div class="course-info" id="choreography">
           <h3 class="course-title">Современная хореография</h3>
           <p class="course-subtitle">
@@ -105,13 +146,51 @@
             of the arms and rhythmic stamping of the feet.
           </p>
 
-          <div class="course-more">
+          <div class="course-more choreography-more">
             <span>Узнать больше</span>
             <span class="more-ico"></span>
           </div>
+
+          <div class="modal__wrapper choreography-modal">
+            <div class="modal">
+              <h2 class="modal-title">Бальные танцы это :</h2>
+              <hr class="modal-line" />
+              <p class="modal-subtitle">Средство воспитания и развития маленького человека</p>
+              <p class="modal-description">
+                Обогащает духовный мир, помогает ребёнку раскрыться как личность. В танце ребенок
+                самоутверждается. На паркете танцевальной студии актуализируется его внутреннее «Я».
+              </p>
+              <p class="modal-subtitle">Физическое, эмоциональное и интеллектуальное развитие</p>
+              <p class="modal-description">
+                Занятия бальными танцами способствуют развитию физической силы ребенка,
+                выносливости, гибкости, укрепляют мышцы, улучшают работу дыхательной и
+                сердечно-сосудистой систем. Многие исследования психологов доказали, что дети,
+                занимающиеся танцами, добиваются больших успехов в учёбе, чем их сверстники, а также
+                опережают их в общем развитии.
+              </p>
+              <p class="modal-subtitle">Память, координация, логическое и образное мышление</p>
+              <p class="modal-description">
+                Занятия танцами развивают у детей эстетические чувства, музыкальный слух, умение
+                воспринимать музыку, учат владеть своим телом, тренируют моторику и координацию
+                движений.
+              </p>
+              <p class="modal-subtitle">
+                Снятие напряжения учебной школьной нагрузки, хорошее настроение
+              </p>
+              <p class="modal-description">
+                Занятия танцами помогают вашему ребенку расслабиться, почувствовать уверенность в
+                себе.
+              </p>
+
+              <div class="modal-close"></div>
+            </div>
+          </div>
         </div>
+
         <div class="course-img choreography-image"></div>
+
         <div class="course-img solo-latin-image"></div>
+
         <div class="course-info" id="solo-latin">
           <h3 class="course-title">Соло-латина</h3>
           <p class="course-subtitle">
@@ -119,11 +198,47 @@
             postures and abrupt pauses.
           </p>
 
-          <div class="course-more">
+          <div class="course-more solo-latin-more">
             <span>Узнать больше</span>
             <span class="more-ico"></span>
           </div>
+
+          <div class="modal__wrapper solo-latin-modal">
+            <div class="modal">
+              <h2 class="modal-title">Бальные танцы это :</h2>
+              <hr class="modal-line" />
+              <p class="modal-subtitle">Средство воспитания и развития маленького человека</p>
+              <p class="modal-description">
+                Обогащает духовный мир, помогает ребёнку раскрыться как личность. В танце ребенок
+                самоутверждается. На паркете танцевальной студии актуализируется его внутреннее «Я».
+              </p>
+              <p class="modal-subtitle">Физическое, эмоциональное и интеллектуальное развитие</p>
+              <p class="modal-description">
+                Занятия бальными танцами способствуют развитию физической силы ребенка,
+                выносливости, гибкости, укрепляют мышцы, улучшают работу дыхательной и
+                сердечно-сосудистой систем. Многие исследования психологов доказали, что дети,
+                занимающиеся танцами, добиваются больших успехов в учёбе, чем их сверстники, а также
+                опережают их в общем развитии.
+              </p>
+              <p class="modal-subtitle">Память, координация, логическое и образное мышление</p>
+              <p class="modal-description">
+                Занятия танцами развивают у детей эстетические чувства, музыкальный слух, умение
+                воспринимать музыку, учат владеть своим телом, тренируют моторику и координацию
+                движений.
+              </p>
+              <p class="modal-subtitle">
+                Снятие напряжения учебной школьной нагрузки, хорошее настроение
+              </p>
+              <p class="modal-description">
+                Занятия танцами помогают вашему ребенку расслабиться, почувствовать уверенность в
+                себе.
+              </p>
+
+              <div class="modal-close"></div>
+            </div>
+          </div>
         </div>
+
         <div class="course-info" id="wedding-dance">
           <h3 class="course-title">Свадебный танец</h3>
           <p class="course-subtitle">
@@ -131,12 +246,49 @@
             of the arms and rhythmic stamping of the feet.
           </p>
 
-          <div class="course-more">
+          <div class="course-more wedding-dance-more">
             <span>Узнать больше</span>
             <span class="more-ico"></span>
           </div>
+
+          <div class="modal__wrapper wedding-dance-modal">
+            <div class="modal">
+              <h2 class="modal-title">Бальные танцы это :</h2>
+              <hr class="modal-line" />
+              <p class="modal-subtitle">Средство воспитания и развития маленького человека</p>
+              <p class="modal-description">
+                Обогащает духовный мир, помогает ребёнку раскрыться как личность. В танце ребенок
+                самоутверждается. На паркете танцевальной студии актуализируется его внутреннее «Я».
+              </p>
+              <p class="modal-subtitle">Физическое, эмоциональное и интеллектуальное развитие</p>
+              <p class="modal-description">
+                Занятия бальными танцами способствуют развитию физической силы ребенка,
+                выносливости, гибкости, укрепляют мышцы, улучшают работу дыхательной и
+                сердечно-сосудистой систем. Многие исследования психологов доказали, что дети,
+                занимающиеся танцами, добиваются больших успехов в учёбе, чем их сверстники, а также
+                опережают их в общем развитии.
+              </p>
+              <p class="modal-subtitle">Память, координация, логическое и образное мышление</p>
+              <p class="modal-description">
+                Занятия танцами развивают у детей эстетические чувства, музыкальный слух, умение
+                воспринимать музыку, учат владеть своим телом, тренируют моторику и координацию
+                движений.
+              </p>
+              <p class="modal-subtitle">
+                Снятие напряжения учебной школьной нагрузки, хорошее настроение
+              </p>
+              <p class="modal-description">
+                Занятия танцами помогают вашему ребенку расслабиться, почувствовать уверенность в
+                себе.
+              </p>
+
+              <div class="modal-close"></div>
+            </div>
+          </div>
         </div>
+
         <div class="course-img wedding-image"></div>
+
         <div class="course-img social-image"></div>
         <div class="course-info" id="social-dance">
           <h3 class="course-title">Социальные направления</h3>
@@ -145,9 +297,44 @@
             postures and abrupt pauses.
           </p>
 
-          <div class="course-more">
+          <div class="course-more social-dance-more">
             <span>Узнать больше</span>
             <span class="more-ico"></span>
+          </div>
+
+          <div class="modal__wrapper social-dance-modal">
+            <div class="modal">
+              <h2 class="modal-title">Бальные танцы это :</h2>
+              <hr class="modal-line" />
+              <p class="modal-subtitle">Средство воспитания и развития маленького человека</p>
+              <p class="modal-description">
+                Обогащает духовный мир, помогает ребёнку раскрыться как личность. В танце ребенок
+                самоутверждается. На паркете танцевальной студии актуализируется его внутреннее «Я».
+              </p>
+              <p class="modal-subtitle">Физическое, эмоциональное и интеллектуальное развитие</p>
+              <p class="modal-description">
+                Занятия бальными танцами способствуют развитию физической силы ребенка,
+                выносливости, гибкости, укрепляют мышцы, улучшают работу дыхательной и
+                сердечно-сосудистой систем. Многие исследования психологов доказали, что дети,
+                занимающиеся танцами, добиваются больших успехов в учёбе, чем их сверстники, а также
+                опережают их в общем развитии.
+              </p>
+              <p class="modal-subtitle">Память, координация, логическое и образное мышление</p>
+              <p class="modal-description">
+                Занятия танцами развивают у детей эстетические чувства, музыкальный слух, умение
+                воспринимать музыку, учат владеть своим телом, тренируют моторику и координацию
+                движений.
+              </p>
+              <p class="modal-subtitle">
+                Снятие напряжения учебной школьной нагрузки, хорошее настроение
+              </p>
+              <p class="modal-description">
+                Занятия танцами помогают вашему ребенку расслабиться, почувствовать уверенность в
+                себе.
+              </p>
+
+              <div class="modal-close"></div>
+            </div>
           </div>
         </div>
       </div>
@@ -411,7 +598,7 @@
         <div class="school-addresses">
           <h3 class="school-address-title"><b>Адреса наших школ:</b></h3>
           <ul class="school-list">
-            <li class="school-item">Солнечная улица, д 4, СШ 54</li>
+            <li class="school-item">Дроздовича улица, д 3, СШ 54</li>
             <li class="school-item">Солнечная улица, д 3, НШ 29</li>
             <li class="school-item">Надеждинская улица, д 21, СШ 55</li>
           </ul>
@@ -523,5 +710,7 @@
         myMap.geoObjects.add(myCollection);
       }
     </script> -->
+
+    <script src="./index.js"></script>
   </body>
 </html>
