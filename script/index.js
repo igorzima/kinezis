@@ -14,11 +14,14 @@ const socialDanceMoreBtn = document.querySelector('.social-dance-more');
 
 const burgerMenu = document.querySelector('.burger-menu');
 
-const modalClose = document.querySelectorAll('.modal-close');
+const modalWrapper = document.querySelectorAll('.modal__wrapper');
+
+const previewArrowDown = document.querySelector('.preview-arrow-down');
+const logoImage = document.querySelector('.logo-image');
 
 burgerMenu.addEventListener('click', () => {
   burgerMenu.classList.toggle('burger-menu_active');
-  document.querySelector('.navigation').classList.toggle('hidden');
+  document.querySelector('.navigation__wrapper').classList.toggle('hidden');
   document.querySelector('body').classList.toggle('scroll-hidden');
 });
 
@@ -27,7 +30,6 @@ navigationList.addEventListener('click', (event) => {
 
   const navigationItems = document.querySelectorAll('.navigation-item');
   const courses = document.querySelector('.navigation-item-courses');
-  const activeSection = event.target.dataset.link;
   const navigation = document.querySelector('.navigation-list');
 
   if (event.target !== navigation) {
@@ -42,25 +44,52 @@ navigationList.addEventListener('click', (event) => {
     } else {
       event.target.closest('.navigation-item').classList.add('active-item');
       document.querySelector('.popover__content').classList.remove('show-content');
-      document.querySelector('.navigation').classList.add('hidden');
+      document.querySelector('.navigation__wrapper').classList.add('hidden');
       burgerMenu.classList.remove('burger-menu_active');
       document.querySelector('body').classList.remove('scroll-hidden');
       document.querySelector('.popover__content').classList.remove('show-content');
     }
 
     if (event.target !== courses) {
-      scrollToActiveSection(activeSection);
+      const targetValue = event.target.getAttribute('href');
+      smoothScroll(targetValue, 500);
     }
   }
 });
 
-function scrollToActiveSection(activeSection) {
-  const section = document.querySelector(`#${activeSection}`);
+previewArrowDown.addEventListener('click', (event) =>
+  smoothScroll(event.target.getAttribute('href'), 500),
+);
 
-  section.scrollIntoView({
-    behavior: 'smooth',
-    block: 'start',
-  });
+logoImage.addEventListener('click', (event) =>
+  smoothScroll(event.target.closest('a').getAttribute('href'), 500),
+);
+
+function smoothScroll(targetValue, duration) {
+  const headerHeight = 80;
+  const target = document.querySelector(targetValue);
+  const targetPosition = target.getBoundingClientRect().top - headerHeight;
+  const startPosition = window.pageYOffset;
+  let startTime = null;
+
+  function animation(currentTime) {
+    if (startTime === null) startTime = currentTime;
+
+    const timeElapsed = currentTime - startTime;
+    const run = ease(timeElapsed, startPosition, targetPosition, duration);
+    window.scrollTo(0, run);
+
+    if (timeElapsed < duration) requestAnimationFrame(animation);
+  }
+
+  function ease(t, b, c, d) {
+    t /= d / 2;
+    if (t < 1) return (c / 2) * t * t + b;
+    t--;
+    return (-c / 2) * (t * (t - 2) - 1) + b;
+  }
+
+  requestAnimationFrame(animation);
 }
 
 ballroomMoreBtn.addEventListener('click', () => {
@@ -83,24 +112,30 @@ weddingDanceMoreBtn.addEventListener('click', () => {
   document.querySelector('body').classList.add('scroll-hidden');
 });
 
-socialDanceMoreBtn.addEventListener('click', () => {
-  socialDanceModal.classList.add('open');
-  document.querySelector('body').classList.add('scroll-hidden');
-});
-
-modalClose.forEach((el) =>
-  el.addEventListener('click', () => {
-    document.querySelectorAll('.modal__wrapper').forEach((el) => el.classList.remove('open'));
-    document.querySelector('body').classList.remove('scroll-hidden');
+modalWrapper.forEach((el) =>
+  el.addEventListener('click', (event) => {
+    if (event.target.dataset.close === 'true') {
+      document.querySelectorAll('.modal__wrapper').forEach((el) => el.classList.remove('open'));
+      document.querySelector('body').classList.remove('scroll-hidden');
+    }
   }),
 );
-
-document.addEventListener('scroll', onScroll);
 
 function onScroll() {
   const curPos = window.scrollY;
   const section = document.querySelectorAll('section');
   const links = document.querySelectorAll('.navigation-list a');
+
+  const courses = document.querySelector('#courses');
+  const coursesTop = courses.getBoundingClientRect().top;
+
+  const joinToGroupBtn = document.querySelector('.join-to-group');
+
+  if (coursesTop < 62) {
+    joinToGroupBtn.style.opacity = 1;
+  } else {
+    joinToGroupBtn.style.opacity = 0;
+  }
 
   section.forEach((el) => {
     if (el.offsetTop <= curPos + 90 && el.offsetTop + el.offsetHeight > curPos + 90) {
@@ -121,13 +156,14 @@ function onScroll() {
           a.closest('.navigation-item').classList.add('active-item'),
         );
         a.addEventListener('mouseleave', () => {
-          console.log(123);
           a.closest('.navigation-item').classList.remove('active-item');
         });
       });
     }
   });
 }
+
+document.addEventListener('scroll', onScroll);
 
 document
   .querySelector('.popover__wrapper')
