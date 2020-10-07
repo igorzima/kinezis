@@ -1,4 +1,4 @@
-html {
+/* html {
   font-size: 10px;
   font-family: 'Philosopher', 'Open Sans', sans-serif;
   color: #fff;
@@ -15,19 +15,19 @@ h2,
 h3,
 p {
   margin: 0;
-}
+} */
 
-a {
+/* a {
   color: inherit;
   text-decoration: none;
-}
+} */
 
-.wrapper {
+/* .wrapper {
   width: 90%;
   margin: 0 auto;
-}
+} */
 
-.flex-wrap {
+/* .flex-wrap {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -47,13 +47,13 @@ a {
   -webkit-box-pack: center;
   -ms-flex-pack: center;
   justify-content: center;
-}
+} */
 
-.scroll-hidden {
+/* .scroll-hidden {
   overflow: hidden;
-}
+} */
 
-.header {
+/* .header {
   height: 90px;
   background: -o-linear-gradient(top, #000000 0%, rgba(0, 0, 0, 0) 191.26%);
   background: -webkit-gradient(
@@ -68,9 +68,9 @@ a {
   position: sticky;
   top: 0;
   z-index: 99;
-}
+} */
 
-.header__wrapper {
+/* .header__wrapper {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -83,24 +83,24 @@ a {
   height: 100%;
   width: 95%;
   margin: 0 auto;
-}
+} */
 
-.burger-menu {
+/* .burger-menu {
   display: none;
-}
+} */
 
-.logo {
+/* .logo {
   color: #fff;
 }
 
 .logo-image {
   width: 100%;
-}
+} */
 
-.navigation__wrapper {
+/* .navigation__wrapper {
   display: flex;
   align-items: center;
-}
+} */
 
 .join-to-group {
   background: linear-gradient(95.15deg, #2fc1ff 1.44%, #045bdd 104.34%);
@@ -136,7 +136,7 @@ a {
   text-transform: uppercase;
 }
 
-.navigation-list {
+/* .navigation-list {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -145,20 +145,20 @@ a {
   list-style-type: none;
   -webkit-padding-start: 0;
   padding-inline-start: 0;
-}
+} */
 
-.navigation-item {
+/* .navigation-item {
   margin-right: 30px;
   cursor: pointer;
   color: #fff;
-}
+} */
 
-.navigation-item > a {
+/* .navigation-item > a {
   text-decoration: none;
   color: #fff;
-}
+} */
 
-.popover__wrapper {
+/* .popover__wrapper {
   margin-right: 40px;
 }
 
@@ -252,7 +252,7 @@ a {
   -o-transition: all 0.3s;
   transition: all 0.3s;
   color: #2e82ff;
-}
+} */
 
 .preview {
   background: url('../assets/image/main.webp') no-repeat;

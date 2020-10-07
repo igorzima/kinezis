@@ -1,0 +1,34 @@
+@import '../components/navigation.scss';
+
+.header {
+  height: 90px;
+  background: -o-linear-gradient(top, #000000 0%, rgba(0, 0, 0, 0) 191.26%);
+  background: -webkit-gradient(
+    linear,
+    left top,
+    left bottom,
+    from(#000000),
+    color-stop(191.26%, rgba(0, 0, 0, 0))
+  );
+  background: linear-gradient(180deg, #000000 0%, rgba(0, 0, 0, 0) 191.26%);
+  position: -webkit-sticky;
+  position: sticky;
+  top: 0;
+  z-index: 99;
+}
+
+.header__wrapper {
+  @include flex(row, space-between, center);
+
+  height: 100%;
+  width: 95%;
+  margin: 0 auto;
+}
+
+.logo {
+  color: #fff;
+}
+
+.logo-image {
+  width: 100%;
+}

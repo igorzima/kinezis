@@ -1,4 +1,4 @@
-import '../style/scss/index.scss';
+import '../style/scss/main.scss';
 
 const navigationList = document.querySelector('.navigation-list');
 

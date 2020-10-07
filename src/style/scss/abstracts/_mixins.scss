@@ -1,0 +1,35 @@
+@mixin main-gradient {
+  background: -webkit-linear-gradient(92.53deg, #1fa5ff 0.6%, #1053ff 102.4%);
+  background: -moz-linear-gradient(92.53deg, #1fa5ff 0.6%, #1053ff 102.4%);
+  background: -o-linear-gradient(92.53deg, #1fa5ff 0.6%, #1053ff 102.4%);
+  background: linear-gradient(92.53deg, #1fa5ff 0.6%, #1053ff 102.4%);
+}
+
+@mixin reverse-gradient {
+  background: -webkit-linear-gradient(222.47deg, #1fa5ff 0.6%, #1053ff 102.4%);
+  background: -moz-linear-gradient(222.47deg, #1fa5ff 0.6%, #1053ff 102.4%);
+  background: -o-linear-gradient(222.47deg, #1fa5ff 0.6%, #1053ff 102.4%);
+  background: linear-gradient(227.53deg, #1fa5ff 0.6%, #1053ff 102.4%);
+}
+
+@mixin flex($direction: row, $justify: flex-start, $align: flex-start, $wrap: nowrap) {
+  display: -webkit-flex;
+  display: flex;
+  -ms-flex-wrap: $wrap;
+  flex-wrap: $wrap;
+  -ms-flex-direction: $direction;
+  flex-direction: $direction;
+  -webkit-box-pack: $justify;
+  -ms-flex-pack: $justify;
+  justify-content: $justify;
+  -webkit-box-align: $align;
+  -ms-flex-align: $align;
+  align-items: $align;
+}
+
+@mixin transition($time: 0.3s, $func: ease-out) {
+  -webkit-transition: all $time $func;
+  -moz-transition: all $time $func;
+  -o-transition: all $time $func;
+  transition: all $time $func;
+}
