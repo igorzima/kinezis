@@ -5,7 +5,9 @@
     <script async src="https://www.googletagmanager.com/gtag/js?id=UA-179256594-1"></script>
     <script async>
       window.dataLayer = window.dataLayer || [];
-      function gtag(){dataLayer.push(arguments);}
+      function gtag() {
+        dataLayer.push(arguments);
+      }
       gtag('js', new Date());
 
       gtag('config', 'UA-179256594-1');
@@ -173,7 +175,7 @@
 
             <div class="modal__wrapper ballroom-modal" data-close="true">
               <div class="modal">
-                <h2 class="modal-title">Бальные танцы это :</h2>
+                <h2 class="modal-title">Бальные танцы это:</h2>
                 <hr class="modal-line" />
                 <p class="modal-subtitle">Средство воспитания и развития маленького человека</p>
                 <p class="modal-description">
@@ -359,7 +361,10 @@
           <div class="flex-wrap coaches-wrapper">
             <div class="coach-info">
               <div class="coach-image coach-info-image-4"></div>
-              <h3 class="coach-name">Симонов Виталий <br> Николаевич</h3>
+              <h3 class="coach-name">
+                Симонов Виталий <br />
+                Николаевич
+              </h3>
               <p><b>Главный тренер</b></p>
               <p class="coach-number"><a href="tel:+375296499394">Тел: +375 (29) 649-93-94</a></p>
             </div>
@@ -375,12 +380,19 @@
                 src="./assets/image/coaches/Zimnitski.webp"
                 alt="coach-image"
               />
-              <h3 class="coach-name">Зимницкий Игорь <br> Элшадович</h3>
+              <h3 class="coach-name">
+                Зимницкий Игорь <br />
+                Элшадович
+              </h3>
               <p><b>Тренер бального танца и соло-латины</b></p>
               <p class="coach-number"><a href="tel:+375445726902">Тел: +375 (44) 572-69-02</a></p>
             </div>
             <div class="coach-info">
-              <img class="coach-image" src="./assets/image/coaches/Muratov.webp" alt="coach-image" />
+              <img
+                class="coach-image"
+                src="./assets/image/coaches/Muratov.webp"
+                alt="coach-image"
+              />
               <h3 class="coach-name">Муратов Тимур Александрович</h3>
               <p><b>Преподаватель актёрского мастерства</b></p>
               <p class="coach-number"><a href="tel:+375296311012">Тел: +375 (29) 631-10-12</a></p>
@@ -486,7 +498,7 @@
                 <td class="price">65р.</td>
               </tr>
               <tr>
-                <td>Дети 9 - 11 лет <br>+ СОЛО</td>
+                <td>Дети 9 - 11 лет <br />+ СОЛО</td>
                 <td>Вт, Чт. 19:00</td>
                 <td class="price">65р.</td>
               </tr>
@@ -511,7 +523,7 @@
           </div>
         </div>
       </section>
-      
+
       <section class="questions">
         <div class="wrapper">
           <h2 class="question-title">Полезная информация</h2>
@@ -829,21 +841,41 @@
     <script src="./script/swiper.js"></script> -->
 
     <!-- Yandex.Metrika counter -->
-    <script async type="text/javascript" >
-      (function(m,e,t,r,i,k,a){m[i]=m[i]||function(){(m[i].a=m[i].a||[]).push(arguments)};
-      m[i].l=1*new Date();k=e.createElement(t),a=e.getElementsByTagName(t)[0],k.async=1,k.src=r,a.parentNode.insertBefore(k,a)})
-      (window, document, "script", "https://mc.yandex.ru/metrika/tag.js", "ym");
+    <script async type="text/javascript">
+      (function (m, e, t, r, i, k, a) {
+        m[i] =
+          m[i] ||
+          function () {
+            (m[i].a = m[i].a || []).push(arguments);
+          };
+        m[i].l = 1 * new Date();
+        (k = e.createElement(t)),
+          (a = e.getElementsByTagName(t)[0]),
+          (k.async = 1),
+          (k.src = r),
+          a.parentNode.insertBefore(k, a);
+      })(window, document, 'script', 'https://mc.yandex.ru/metrika/tag.js', 'ym');
 
-      ym(67742860, "init", {
-          clickmap:true,
-          trackLinks:true,
-          accurateTrackBounce:true
+      ym(67742860, 'init', {
+        clickmap: true,
+        trackLinks: true,
+        accurateTrackBounce: true,
       });
     </script>
-    <noscript><div><img src="https://mc.yandex.ru/watch/67742860" style="position:absolute; left:-9999px;" alt="" /></div></noscript>
+    <noscript
+      ><div>
+        <img
+          src="https://mc.yandex.ru/watch/67742860"
+          style="position: absolute; left: -9999px"
+          alt=""
+        /></div
+    ></noscript>
     <!-- /Yandex.Metrika counter -->
 
-    <script defer src="https://api-maps.yandex.ru/2.1/?apikey=2919b30d-7ab5-4bca-84b7-172088bb4fbb&lang=ru_RU"></script>
+    <script
+      defer
+      src="https://api-maps.yandex.ru/2.1/?apikey=2919b30d-7ab5-4bca-84b7-172088bb4fbb&lang=ru_RU"
+    ></script>
     <script defer src="./script/yandexMap.js"></script>
 
     <script src="./script/index.js"></script>
