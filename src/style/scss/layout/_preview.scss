@@ -1,0 +1,94 @@
+.preview {
+  background: url('~assets/image/main.webp') no-repeat;
+  background-size: cover;
+  margin: -90px 0 0;
+  position: relative;
+  background-position: top;
+  height: 100vh;
+}
+
+.preview-content {
+  @include flex(column, center, center);
+
+  height: 100%;
+  text-align: center;
+  background: -o-linear-gradient(top, rgba(0, 0, 0, 0) 0%, #000000 100%);
+  background: -webkit-gradient(linear, left top, left bottom, from(rgba(0, 0, 0, 0)), to(#000000));
+  background: linear-gradient(180deg, rgba(0, 0, 0, 0) 0%, #000000 100%);
+}
+
+.preview-title {
+  font-size: 7.2rem;
+  margin: 0 5px;
+}
+
+.preview-subtitle {
+  font-size: 2.2rem;
+  color: #ccc;
+  margin: 40px 0 0;
+}
+
+.preview-button {
+  align-self: center;
+  margin: 50px 0 0;
+  opacity: 1;
+}
+
+.preview-button__link {
+  padding: 15px;
+}
+
+@-webkit-keyframes btn-light {
+  from {
+    -webkit-transform: translateX(-2em) skewX(-45deg);
+    transform: translateX(-2em) skewX(-45deg);
+  }
+  to {
+    -webkit-transform: translateX(15em) skewX(-45deg);
+    transform: translateX(15em) skewX(-45deg);
+  }
+}
+
+@keyframes btn-light {
+  from {
+    -webkit-transform: translateX(-2em) skewX(-45deg);
+    transform: translateX(-2em) skewX(-45deg);
+  }
+  to {
+    -webkit-transform: translateX(15em) skewX(-45deg);
+    transform: translateX(15em) skewX(-45deg);
+  }
+}
+
+.preview-arrow-down {
+  position: absolute;
+  -ms-flex-item-align: center;
+  -ms-grid-row-align: center;
+  align-self: center;
+  width: 40px;
+  height: 40px;
+  bottom: 30px;
+  -webkit-animation: arrow-down 2s infinite;
+  animation: arrow-down 2s infinite;
+}
+
+.preview-arrow-down::before {
+  content: url('~assets/image/down-arrow.svg');
+  width: 40px;
+  position: absolute;
+  top: 0;
+  left: 0;
+  cursor: pointer;
+}
+
+@-webkit-keyframes arrow-down {
+  50% {
+    bottom: 15px;
+  }
+}
+
+@keyframes arrow-down {
+  50% {
+    bottom: 15px;
+  }
+}

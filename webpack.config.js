@@ -36,6 +36,9 @@ module.exports = {
   },
   resolve: {
     extensions: ['.js'],
+    alias: {
+      assets: path.resolve(__dirname, './src/assets'),
+    },
   },
   devtool: isDev ? 'source-map' : false,
   devServer: {
@@ -80,6 +83,7 @@ module.exports = {
             },
           },
           'css-loader',
+          'resolve-url-loader',
           'sass-loader',
         ],
       },
@@ -87,6 +91,14 @@ module.exports = {
         test: /\.m?js$/,
         exclude: /node_modules/,
         use: jsLoaders,
+      },
+      {
+        test: /\.(png|jpe?g|gif|webp|svg)$/i,
+        use: [
+          {
+            loader: 'file-loader',
+          },
+        ],
       },
     ],
   },
