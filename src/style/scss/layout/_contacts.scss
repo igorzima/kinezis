@@ -1,0 +1,42 @@
+.contacts {
+  @include main-gradient;
+
+  padding: 50px 0;
+  text-align: center;
+}
+
+.contacts-title {
+  font-size: 4.6rem;
+}
+
+.contact {
+  font-size: 2.6rem;
+  margin: 50px 0 0;
+}
+
+.school-addresses {
+  font-size: 1.8rem;
+}
+
+.school-address-title {
+  margin: 50px 0 0;
+}
+
+.school-list {
+  list-style-type: none;
+  -webkit-padding-start: 0;
+  padding-inline-start: 0;
+  margin: 10px 0;
+}
+
+.social-icons {
+  @include flex(row, center);
+}
+
+.social-icons > div {
+  margin: 30px 10px;
+}
+
+.t-sociallinks__svg:hover .svg-ico {
+  fill: #e6e6e6 !important;
+}
