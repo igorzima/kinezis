@@ -1,0 +1,72 @@
+.coaches-wrapper {
+  width: 85%;
+  margin: 0 auto;
+}
+
+.coaches {
+  padding: 70px 0 0;
+  color: #000;
+  text-align: center;
+}
+
+.coaches-info {
+  margin-bottom: 100px;
+}
+
+.coaches-title {
+  font-size: 4.2rem;
+}
+
+.coaches-subtitle {
+  font-size: 2.4rem;
+  max-width: 563px;
+  margin: 30px auto;
+}
+
+.coach-info {
+  @include flex(column, center, center);
+
+  margin: 0 0 80px;
+  width: 310px;
+  font-size: 1.5rem;
+}
+
+.coach-image {
+  width: 250px;
+  height: 250px;
+  border-radius: 50%;
+}
+
+.coach-info-image-1 {
+  background: url('~assets/image/coaches/Buinovski.webp') no-repeat;
+  background-position: -64px -53px;
+}
+
+.coach-info-image-2 {
+  background: url('~assets/image/coaches/Biduk.webp') no-repeat;
+  background-position: -38px -53px;
+}
+
+.coach-info-image-3 {
+  background: url('~assets/image/coaches/Ivashkevich.webp') no-repeat;
+  background-position: -37px -65px;
+}
+
+.coach-info-image-4 {
+  background: url('~assets/image/coaches/Simonov.webp') no-repeat;
+  background-position: -173px -28px;
+}
+
+.coach-info-image-5 {
+  background: url('~assets/image/coaches/Musko.webp') no-repeat;
+  background-position: -2px -53px;
+}
+
+.coach-name {
+  font-size: 2.2rem;
+  margin: 10px 0;
+}
+
+.coach-number {
+  margin: 5px 0 0;
+}

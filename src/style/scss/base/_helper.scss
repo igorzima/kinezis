@@ -14,3 +14,7 @@
 .flex-wrap_center {
   @include flex(row, center, flex-start, wrap);
 }
+
+.line {
+  margin: 30px 0;
+}
