@@ -1,0 +1,369 @@
+@media screen and (max-width: 1350px) {
+  .logo {
+    width: 19%;
+  }
+
+  .logo > img {
+    width: 100%;
+  }
+
+  .course-img,
+  .course-info {
+    width: 50%;
+  }
+
+  .payment-title {
+    width: auto;
+    margin: 0 0 25px;
+  }
+
+  .navigation-list,
+  .join-to-group__link {
+    font-size: 1.8rem;
+  }
+}
+
+@media screen and (max-width: 1180px) {
+  .navigation-list,
+  .join-to-group__link {
+    font-size: 1.5rem;
+  }
+
+  .join-to-group {
+    margin: 0 20px 0 0;
+  }
+
+  .preview-button {
+    margin: 50px 0 0;
+  }
+}
+
+@media screen and (max-width: 980px) {
+  .flex-wrap {
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+  }
+
+  .logo {
+    width: 35%;
+  }
+
+  .navigation__wrapper {
+    @include flex(column, center, center);
+    @include transition(0.3s, ease-in);
+
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+    background: #000;
+    opacity: 1;
+
+    height: 100vh;
+  }
+
+  .join-to-group {
+    margin: 0;
+  }
+
+  .join-to-group__link {
+    padding: 20px 5px;
+  }
+
+  .popover__content > ul::before {
+    display: none;
+  }
+
+  .hidden {
+    @include transition(0.3s, ease-in);
+
+    display: none;
+  }
+
+  .navigation-list {
+    @include flex(column, center, center);
+
+    padding: 30px 0;
+    width: 100%;
+    text-align: center;
+  }
+
+  .navigation-item {
+    margin: 20px 0;
+  }
+
+  .popover__wrapper {
+    @include flex(column, center, center);
+  }
+
+  .popover__item > a {
+    color: #fff;
+  }
+
+  .popover__content {
+    position: static;
+    -webkit-transform: translate(0);
+    -ms-transform: translate(0);
+    transform: translate(0);
+  }
+
+  .popover__content > ul {
+    background: transparent;
+    color: #fff;
+    text-align: center;
+  }
+
+  .burger-menu {
+    @include flex(column, center, center);
+    @include transition(0.3s, ease-in);
+
+    height: 23px;
+    width: 30px;
+    z-index: 100;
+    position: absolute;
+    right: 5%;
+    cursor: pointer;
+  }
+
+  .burger-menu::before {
+    @include transition(0.3s, ease-in);
+
+    content: '';
+    position: absolute;
+    width: 100%;
+    height: 3px;
+    background-color: #fff;
+    top: 0;
+  }
+
+  .burger-menu::after {
+    @include transition(0.3s, ease-in);
+
+    content: '';
+    position: absolute;
+    width: 100%;
+    height: 3px;
+    background-color: #fff;
+    bottom: 0;
+  }
+
+  .burger-menu__line {
+    @include transition(0.3s, ease-in);
+
+    width: 100%;
+    height: 3px;
+    background-color: #fff;
+  }
+
+  .burger-menu_active::before {
+    @include transition(0.3s, ease-in);
+
+    -webkit-transform: rotate(45deg);
+    -ms-transform: rotate(45deg);
+    transform: rotate(45deg);
+    top: 10px;
+  }
+
+  .burger-menu_active::after {
+    @include transition(0.3s, ease-in);
+
+    -webkit-transform: rotate(-45deg);
+    -ms-transform: rotate(-45deg);
+    transform: rotate(-45deg);
+    bottom: 10px;
+  }
+
+  .burger-menu_active .burger-menu__line {
+    @include transition(0.3s, ease-in);
+
+    opacity: 0;
+  }
+
+  .preview-button {
+    margin: 50px 0 0;
+  }
+
+  .question-item {
+    width: 100%;
+    margin: 20px;
+  }
+
+  .gallery-image {
+    max-width: 60%;
+  }
+
+  .gallery-image-wide {
+    max-width: 100%;
+  }
+}
+
+@media screen and (max-width: 870px) {
+  .preview-title {
+    font-size: 6rem;
+  }
+
+  .course-title {
+    font-size: 3rem;
+  }
+
+  .course-subtitle,
+  .course-more {
+    font-size: 1.6rem;
+  }
+
+  .coaches-wrapper {
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+  }
+}
+
+@media screen and (max-width: 680px) {
+  .logo {
+    width: 50%;
+  }
+
+  .preview {
+    background-position: left 33% bottom;
+  }
+
+  .course-info,
+  .course-img {
+    width: 100%;
+  }
+
+  .ballroom-image {
+    -webkit-box-ordinal-group: 2;
+    -ms-flex-order: 1;
+    order: 1;
+  }
+
+  .ballroom {
+    -webkit-box-ordinal-group: 3;
+    -ms-flex-order: 2;
+    order: 2;
+  }
+
+  .choreography {
+    -webkit-box-ordinal-group: 5;
+    -ms-flex-order: 4;
+    order: 4;
+  }
+
+  .choreography-image {
+    -webkit-box-ordinal-group: 4;
+    -ms-flex-order: 3;
+    order: 3;
+  }
+
+  .solo-latin-image {
+    -webkit-box-ordinal-group: 6;
+    -ms-flex-order: 5;
+    order: 5;
+  }
+
+  .solo-latin {
+    -webkit-box-ordinal-group: 7;
+    -ms-flex-order: 6;
+    order: 6;
+  }
+
+  .wedding-image {
+    -webkit-box-ordinal-group: 8;
+    -ms-flex-order: 7;
+    order: 7;
+  }
+
+  .wedding {
+    -webkit-box-ordinal-group: 9;
+    -ms-flex-order: 8;
+    order: 8;
+  }
+
+  .social-image {
+    -webkit-box-ordinal-group: 10;
+    -ms-flex-order: 9;
+    order: 9;
+  }
+
+  .social {
+    -webkit-box-ordinal-group: 11;
+    -ms-flex-order: 10;
+    order: 10;
+  }
+
+  .schedule-info {
+    width: 100%;
+    font-size: 1.6rem;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+  }
+
+  .school-item {
+    margin: 0 0 20px;
+  }
+
+  .school-number {
+    font-size: 2rem;
+    width: 170px;
+  }
+
+  .gallery-image {
+    max-width: 80%;
+    height: auto;
+  }
+
+  .gallery-image-wide {
+    max-width: 100%;
+  }
+}
+
+@media screen and (max-width: 426px) {
+  .logo {
+    width: 70%;
+  }
+
+  .preview-title {
+    font-size: 2.5rem;
+  }
+
+  .preview-subtitle {
+    font-size: 1.6rem;
+  }
+
+  .school-number {
+    width: 100px;
+  }
+
+  .school-address {
+    font-size: 1.5rem;
+  }
+
+  .payment-title {
+    text-align: center;
+  }
+
+  .gallery-image {
+    max-width: 100%;
+    height: auto;
+  }
+
+  .gallery-image-wide {
+    max-width: 100%;
+  }
+
+  .copyright {
+    display: none;
+  }
+
+  .footer__info {
+    justify-content: center;
+    flex-direction: column;
+  }
+
+  .footer__developers {
+    margin: 20px 0 0;
+  }
+}

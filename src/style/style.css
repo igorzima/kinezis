@@ -957,7 +957,7 @@ td {
   height: 100%;
 } */
 
-@media screen and (max-width: 1350px) {
+/* @media screen and (max-width: 1350px) {
   .logo {
     width: 19%;
   }
@@ -1367,4 +1367,4 @@ td {
   .footer__developers {
     margin: 20px 0 0;
   }
-}
+} */
