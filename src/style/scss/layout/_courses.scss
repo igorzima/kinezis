@@ -1,0 +1,108 @@
+.courses {
+  padding: 50px 0;
+  background: #000;
+}
+
+.course-info {
+  @include main-gradient;
+  @include flex(column, center, center);
+
+  width: 600px;
+  height: 350px;
+  text-align: center;
+}
+
+.course-info:nth-child(odd) {
+  @include reverse-gradient;
+
+  background-clip: padding-box;
+}
+
+.course-title {
+  font-size: 3.6rem;
+  padding: 0 25px;
+}
+
+.course-subtitle {
+  font-size: 2rem;
+  padding: 25px 0;
+  padding: 20px 25px;
+}
+
+.course-more {
+  font-size: 2rem;
+  color: #fff600;
+  cursor: pointer;
+  z-index: 5;
+  padding: 0 25px;
+}
+
+.course-more:hover {
+  text-shadow: 0px 4px 4px rgba(255, 246, 0, 0.44);
+}
+
+.course-img {
+  width: 600px;
+  height: 350px;
+  background: #000;
+}
+
+.ballroom-image {
+  background: url('~assets/image/ballroom.webp') no-repeat;
+  background-size: cover;
+  background-position: center;
+}
+
+.choreography-image {
+  background: url('~assets/image/choreography.webp') no-repeat;
+  background-size: cover;
+  background-position: center;
+}
+
+.solo-latin-image {
+  background: url('~assets/image/solo-latin.webp') no-repeat;
+  background-size: cover;
+  background-position: center;
+}
+
+.wedding-image {
+  background: url('~assets/image/wedding.webp') no-repeat;
+  background-size: cover;
+  background-position: center;
+}
+
+.social-image {
+  background: url('~assets/image/social.webp') no-repeat;
+  background-size: cover;
+  background-position: center;
+}
+
+.more-ico {
+  display: inline-block;
+  width: 20px;
+  height: 16px;
+  position: relative;
+}
+
+.more-ico::before {
+  content: '';
+  background-color: #fff600;
+  width: 10px;
+  height: 2px;
+  position: absolute;
+  top: 44%;
+  right: 0;
+  transform: rotate(30deg);
+}
+
+.more-ico::after {
+  content: '';
+  background-color: #fff600;
+  width: 15px;
+  position: absolute;
+  bottom: 14%;
+  right: 0;
+  width: 10px;
+  height: 2px;
+  transform: rotate(-30deg);
+}

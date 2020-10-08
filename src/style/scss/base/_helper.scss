@@ -6,3 +6,11 @@
 .scroll-hidden {
   overflow: hidden;
 }
+
+.flex-wrap {
+  @include flex(row, space-between, flex-start, wrap);
+}
+
+.flex-wrap_center {
+  @include flex(row, center, flex-start, wrap);
+}
