@@ -1,0 +1,22 @@
+.payment {
+  @include main-gradient;
+
+  padding: 100px 0;
+}
+
+.payment__wrapper {
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+}
+
+.payment-title {
+  font-size: 3rem;
+  margin: 0 90px 25px 0;
+  width: 205px;
+}
+
+.payment-info {
+  font-size: 2.2rem;
+  text-align: center;
+}

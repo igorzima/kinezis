@@ -15,6 +15,10 @@
   @include flex(row, center, flex-start, wrap);
 }
 
+.flex-column {
+  @include flex(column, center, center);
+}
+
 .line {
   margin: 30px 0;
 }
