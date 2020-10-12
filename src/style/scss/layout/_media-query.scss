@@ -1,11 +1,7 @@
 @media screen and (max-width: 1350px) {
-  .logo {
-    width: 19%;
-  }
-
-  .logo > img {
-    width: 100%;
-  }
+  // .logo {
+  //   width: 19%;
+  // }
 
   .course-img,
   .course-info {
@@ -24,6 +20,10 @@
 }
 
 @media screen and (max-width: 1180px) {
+  .logo {
+    width: 240px;
+  }
+
   .navigation-list,
   .join-to-group__link {
     font-size: 1.5rem;
@@ -46,7 +46,7 @@
   }
 
   .logo {
-    width: 35%;
+    width: 260px;
   }
 
   .navigation__wrapper {
@@ -220,9 +220,9 @@
 }
 
 @media screen and (max-width: 680px) {
-  .logo {
-    width: 50%;
-  }
+  // .logo {
+  //   width: 50%;
+  // }
 
   .preview {
     background-position: left 33% bottom;
@@ -322,7 +322,7 @@
 
 @media screen and (max-width: 426px) {
   .logo {
-    width: 70%;
+    width: 200px;
   }
 
   .preview-title {

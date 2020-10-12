@@ -83,7 +83,6 @@ module.exports = {
             },
           },
           'css-loader',
-          'resolve-url-loader',
           'sass-loader',
         ],
       },
@@ -97,6 +96,9 @@ module.exports = {
         use: [
           {
             loader: 'file-loader',
+            options: {
+              outputPath: 'assets/image',
+            },
           },
         ],
       },

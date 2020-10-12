@@ -1,23 +1,19 @@
+import { modalData } from './modalData';
+import { modal } from './modal';
+import init from './yandexMap';
+
 import '../style/scss/main.scss';
 
 const navigationList = document.querySelector('.navigation-list');
 
-const ballroomModal = document.querySelector('.ballroom-modal');
-const choreographyModal = document.querySelector('.choreography-modal');
-const soloLatinModal = document.querySelector('.solo-latin-modal');
-const weddingDanceModal = document.querySelector('.wedding-dance-modal');
-
-const ballroomMoreBtn = document.querySelector('.ballroom-more');
-const choreographyMoreBtn = document.querySelector('.choreography-more');
-const soloLatinMoreBtn = document.querySelector('.solo-latin-more');
-const weddingDanceMoreBtn = document.querySelector('.wedding-dance-more');
-
 const burgerMenu = document.querySelector('.burger-menu');
-
-const modalWrapper = document.querySelectorAll('.modal__wrapper');
 
 const previewArrowDown = document.querySelector('.preview-arrow-down');
 const logoImage = document.querySelector('.logo-image');
+
+const modalWrapper = document.querySelectorAll('.modal__wrapper');
+const openModalBtn = document.querySelectorAll('.course-more');
+const modalWindow = document.querySelectorAll('.modal');
 
 burgerMenu.addEventListener('click', () => {
   burgerMenu.classList.toggle('burger-menu_active');
@@ -92,25 +88,17 @@ function smoothScroll(targetValue, duration) {
   requestAnimationFrame(animation);
 }
 
-ballroomMoreBtn.addEventListener('click', () => {
-  ballroomModal.classList.add('open');
-  document.querySelector('body').classList.add('scroll-hidden');
-});
+openModalBtn.forEach((el, index) =>
+  el.addEventListener('click', () => {
+    if (el === openModalBtn[openModalBtn.length - 1]) {
+      return;
+    }
 
-choreographyMoreBtn.addEventListener('click', () => {
-  choreographyModal.classList.add('open');
-  document.querySelector('body').classList.add('scroll-hidden');
-});
-
-soloLatinMoreBtn.addEventListener('click', () => {
-  soloLatinModal.classList.add('open');
-  document.querySelector('body').classList.add('scroll-hidden');
-});
-
-weddingDanceMoreBtn.addEventListener('click', () => {
-  weddingDanceModal.classList.add('open');
-  document.querySelector('body').classList.add('scroll-hidden');
-});
+    modalWrapper[index].classList.add('open');
+    modalWindow[index].insertAdjacentHTML('afterbegin', modal(modalData[index]));
+    document.querySelector('body').classList.add('scroll-hidden');
+  }),
+);
 
 modalWrapper.forEach((el) =>
   el.addEventListener('click', (event) => {
@@ -168,3 +156,6 @@ document.addEventListener('scroll', onScroll);
 document.querySelector('.popover__wrapper').addEventListener('mouseleave', () => {
   document.querySelector('.popover__content').classList.remove('show-content');
 });
+
+const ymaps = window.ymaps;
+ymaps.ready(init);
