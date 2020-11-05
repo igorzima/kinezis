@@ -31,14 +31,30 @@
     <meta name="robots" content="index, follow" />
     <meta name="author" content="Ihar Zimnitski and Anna Kalganova" />
 
+    <meta name="google-site-verification" content="NTe-0kOaSNvtj4q_N9HnM-krdoO61JjoPrkIfHb76L8" />
+
     <link rel="shortcut icon" href="./favicon.ico" type="image/x-icon" />
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-VS1XMCJW0E"></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag() {
+        dataLayer.push(arguments);
+      }
+      gtag('js', new Date());
+
+      gtag('config', 'G-VS1XMCJW0E');
+    </script>
   </head>
   <body>
     <header class="header">
       <div class="header__wrapper">
         <div class="logo">
           <a href="#join" class="scroll-to" data-link="join">
-            <img class="logo-image" src="./assets/image/logo.webp" alt="logo" />
+            <picture class="logo-image">
+              <source srcset="./assets/image/logo.webp" type="image/webp" />
+              <img src="./assets/image/logo.png" alt="logo" width="100%" />
+            </picture>
           </a>
         </div>
         <div class="navigation__wrapper hidden">
@@ -262,11 +278,14 @@
               <p class="coach-number"><a href="tel:+375296051501">Тел: +375 (29) 605-15-01</a></p>
             </div>
             <div class="coach-info">
-              <img
-                class="coach-image"
-                src="./assets/image/coaches/Zimnitski.webp"
-                alt="coach-image"
-              />
+              <picture>
+                <source srcset="./assets/image/coaches/Zimnitski.webp" type="image/webp" />
+                <img
+                  class="coach-image"
+                  src="./assets/image/coaches/Zimnitski.jpg"
+                  alt="coach-image"
+                />
+              </picture>
               <h3 class="coach-name">
                 Зимницкий Игорь <br />
                 Элшадович
@@ -275,21 +294,27 @@
               <p class="coach-number"><a href="tel:+375445726902">Тел: +375 (44) 572-69-02</a></p>
             </div>
             <div class="coach-info">
-              <img
-                class="coach-image"
-                src="./assets/image/coaches/Muratov.webp"
-                alt="coach-image"
-              />
+              <picture>
+                <source srcset="./assets/image/coaches/Muratov.webp" type="image/webp" />
+                <img
+                  class="coach-image"
+                  src="./assets/image/coaches/Muratov.jpg"
+                  alt="coach-image"
+                />
+              </picture>
               <h3 class="coach-name">Муратов Тимур Александрович</h3>
               <p><b>Преподаватель актёрского мастерства</b></p>
               <p class="coach-number"><a href="tel:+375296311012">Тел: +375 (29) 631-10-12</a></p>
             </div>
             <div class="coach-info">
-              <img
-                class="coach-image"
-                src="./assets/image/coaches/Leonovich.webp"
-                alt="coach-image"
-              />
+              <picture>
+                <source srcset="./assets/image/coaches/Leonovich.webp" type="image/webp" />
+                <img
+                  class="coach-image"
+                  src="./assets/image/coaches/Leonovich.jpg"
+                  alt="coach-image"
+                />
+              </picture>
               <h3 class="coach-name">Леонович Анна Владимировна</h3>
               <p><b>Ассистент педагога по бальным танцам, инструктор по соло-латине</b></p>
               <p class="coach-number"><a href="tel:+375291547958">Тел: +375 (29) 154-79-58</a></p>
@@ -301,11 +326,14 @@
               <p class="coach-number"><a href="tel:+375293666177">Тел: +375 (29) 366-61-77</a></p>
             </div>
             <div class="coach-info">
-              <img
-                class="coach-image"
-                src="./assets/image/coaches/Mitskevich.webp"
-                alt="coach-image"
-              />
+              <picture>
+                <source srcset="./assets/image/coaches/Mitskevich.webp" type="image/webp" />
+                <img
+                  class="coach-image"
+                  src="./assets/image/coaches/Mitskevich.jpg"
+                  alt="coach-image"
+                />
+              </picture>
               <h3 class="coach-name">Мицкевич Кристина Викторовна</h3>
               <p><b>Хореограф</b></p>
               <p class="coach-number"><a href="tel:+375298629404">Тел: +375 (29) 862-94-04</a></p>
@@ -728,15 +756,5 @@
       src="https://api-maps.yandex.ru/2.1/?apikey=2919b30d-7ab5-4bca-84b7-172088bb4fbb&lang=ru_RU"
       rel="noopener noreferrer"
     ></script>
-    <script src="https://www.googletagmanager.com/gtag/js?id=UA-179256594-1"></script>
-    <script>
-      window.dataLayer = window.dataLayer || [];
-      function gtag() {
-        dataLayer.push(arguments);
-      }
-      gtag('js', new Date());
-
-      gtag('config', 'UA-179256594-1');
-    </script>
   </body>
 </html>
