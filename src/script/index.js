@@ -157,5 +157,7 @@ document.querySelector('.popover__wrapper').addEventListener('mouseleave', () =>
   document.querySelector('.popover__content').classList.remove('show-content');
 });
 
-const ymaps = window.ymaps;
-ymaps.ready(init);
+window.addEventListener('load', () => {
+  const ymaps = window.ymaps;
+  ymaps.ready(init);
+});

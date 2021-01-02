@@ -1,6 +1,5 @@
-const ymaps = window.ymaps;
-
 export default function init() {
+  const ymaps = window.ymaps;
   // Создание карты.
   const myMap = new ymaps.Map('map', {
     center: [53.863978, 27.562542],
